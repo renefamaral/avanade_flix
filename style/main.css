@@ -1,0 +1,70 @@
+:root{ /* declarando as variáveis principais */
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+
+*{ /* resetando todas as margens (recomendado) */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* elementos internos ñ ultrapasa borda */
+}
+
+/* elementos base */
+
+body{ /* cor de fundo principal da página */
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+
+header .container{
+    display: flex; /* posiciona o menu a direita do logo por padrão */   
+    flex-direction: row; /* utilizado para semântica */
+    align-items: center; /* alinha o menu ao centro da linha (row) */
+    justify-content: space-between; /* cria espaço entre o logo e menu */
+}
+
+header .logo{ /* tratamento específico para o logo */
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;  
+    margin-left: 10px;  
+} 
+
+header nav a{
+    text-decoration: none; /* retira o sublinhado do menu */
+    color: #aaa;
+    margin-right: 20px; /*cria espaçemnto a direita */
+    font-size: 20px;
+}
+
+header nav a:hover{ /* cria um efeito toda vez que o mouse estiver sobre a font */ 
+    color: #fff;
+}
+
+/* main-movie */
+
+.main-movie{
+    font-size: 16px;
+    margin-top: 5px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/img/sully_capa.jpg'); /* linear-gradiente cria uma camada para facilitar a visualização do texto sobre a imagem, aplicamdp gradiente de 100% */
+
+    height: 400px;
+    background-size: cover; /* ocupa todo o espaço disponível em height */
+
+    display: flex; /* utilizado para posionar os botões assistir agora e mais informações */
+    flex-direction: column; /* direciona em forma de coluna */
+    justify-content: certer; /* centraliza os botões seguindo a direção do flex-direction */
+    align-items: flex-start; /* iniciam na esquerda */
+    
+}
+
+.main-movie .description{
+    margin-bottom: 40px; /* Empurra os botões criando o distanciamento setado */
+}
+
+.tittle{
+    font-size: 40px; /* Tamanho da letra do título */
+}
