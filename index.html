@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/main.css">
+
+    <!-- owl css-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
     <title>FlightFlix</title>
 </head>
 <body>
@@ -26,17 +31,54 @@
                 <h3 class="tittle">SULLY</h3>
                 <p class="description">Em 2009, o mundo entrou em estado de choque e admiração quando o Capitão Chesley "Sully" Sullenberger conseguiu pousar um avião em pane no Rio Hudson. Esse ato quase impossível salvou a vida dos 150 passageiros e alçou Sully à categoria de herói nacional. No entanto, nem mesmo a aclamação pública foi capaz de impedir uma investigação rigorosa sobre sua reputação e carreira.</p>
                 <div class="buttons">
-                    <button role="button" class="button"> <!--A propriedade role é usada para indicar que trata-se de um botão, independete do dipostivo utilizado-->
+                    <button role="button" class="button">
+                        <i class="fas fa-play"></i> <!--A propriedade role é usada para indicar que trata-se de um botão, independete do dipostivo utilizado-->
                         ASSITIR AGORA
                     </button>
                     <button role="button" class="button">
+                        <i class="fas fa-info-circle"></i>
                         MAIS INFORMAÇÕES
                     </button>
                 </div>
-            </div>
-            
+            </div>            
         </div>
     </main> <!--Fim do banner principal-->
+
+    <div class="carousel-movies"> <!--inicio carrossel filmes-->
+        <div class="owl-carousel owl-theme"> <!--referenciando o owl carousel-->
+            <div class="item"> <!--1-->
+                <img class="box-movie" src="img/o-aviador.jpg" alt="cartaz do filme o aviador"> <!--passando o caminho da imagem-->
+            </div>
+            <div class="item"> <!--2-->
+                <img class="box-movie" src="img/O-terminal.jpg" alt="cartaz do filme o terminal"> <!--passando o caminho da imagem-->
+            </div>
+            <div class="item"> <!--3-->
+                <img class="box-movie" src="img/prenda-me-se-for-capaz.jpg" alt="cartaz do filme prenda-mse se for capaz"> <!--passando o caminho da imagem-->
+            </div>
+            <div class="item"> <!--4-->
+                <img class="box-movie" src="img/apertem-os-cintos-o-piloto-sumiu.jpg" alt="cartaz do filme apertem os cintos o piloto sumiu"> <!--passando o caminho da imagem-->
+            </div>
+            <div class="item"> <!--5-->
+                <img class="box-movie" src="img/boeing-boeing.jpg" alt="cartaz do filme boeing-boeing"> <!--passando o caminho da imagem-->
+            </div>
+            <div class="item"> <!--6-->
+                <img class="box-movie" src="img/ela-e-demaos-pra-mimjpg.jpg" alt="cartaz do filme ela é demais para mim."> <!--passando o caminho da imagem-->
+            </div>
+            <div class="item"> <!--7-->
+                <img class="box-movie" src="img/serpentes-a-bordo.jpg" alt="cartaz do filme serpentes a serpentes-a-bordo"> <!--passando o caminho da imagem-->
+            </div>
+            <div class="item"> <!--8-->
+                <img class="box-movie" src="img/amor-sem-escalasjpg.jpg" alt="cartaz do filme amor sem escalas"> <!--passando o caminho da imagem-->
+            </div>            
+        </div>
+    </div>
+
+    
+    <!--Inicio do scripts. Recomendado deixar sempre no final do html-->
+    <script src="https://kit.fontawesome.com/1a10758314.js" crossorigin="anonymous"></script> <!--kit code awesome-->
+    <script src="js/owl/jquery.min.js"></script> <!--Carousel Jquery-->
+    <script src="js/owl/owl.carousel.min.js"></script> <!--Carousel Jquery-->
+    <script src="js/owl/setup.js"></script> <!--Referenciando o arquivo setup.js para aplicar o carrossel na página-->
 
 </body>
 </html>

@@ -56,15 +56,56 @@ header nav a:hover{ /* cria um efeito toda vez que o mouse estiver sobre a font 
 
     display: flex; /* utilizado para posionar os botões assistir agora e mais informações */
     flex-direction: column; /* direciona em forma de coluna */
-    justify-content: certer; /* centraliza os botões seguindo a direção do flex-direction */
+    justify-content: center; /* centraliza os botões seguindo a direção do flex-direction */
     align-items: flex-start; /* iniciam na esquerda */
     
 }
 
 .main-movie .description{
     margin-bottom: 40px; /* Empurra os botões criando o distanciamento setado */
+    margin-top: 10px; /* cria espaçamento entre a descrição e título */
+
 }
 
-.tittle{
+.main-movie .tittle{
+    margin-top: 5%; /* posicionamento do título */
     font-size: 40px; /* Tamanho da letra do título */
+    font-family: 'Trebuchet MS', Arial, sans-serif; /* Alterando a fonte do título */
+
+}
+
+.button{
+    background-color: rgba(0,0,0,.50); /* cor de fundo do botão */
+    border: none; /* sem bordas */
+    color: white; /* conteúdo em branco */
+
+    padding: 15px 30px; /* trata o espaçamento interno em relação a borda */
+    margin-right: 15px; /* Espaçamento a direita dos botões */
+    font-size: 12px; /* Tamanho da fonte */
+
+    cursor: pointer; /* Muda o formato do cursor indicando possibilidade de ação com o botão */
+
+    transition: .3s ease all; /* cuida da transição entre uma animação e outra */
+
+}
+
+.button:hover{
+    background-color: white; /* qnd o mouse estiver no botão fundo branco */
+    color: black; /* qnd o mouse estiver no botão letra preta */
+}
+
+.button i{
+    margin-right: 8px; /* criando espaçamento entre o ícone do botão e o texto */
+}
+
+.main-movie .container{
+    width: 70%; /* o conteúdo do container não ultrapassará 70% da tela  */
+    margin-left: 15px; /* ajusta a margem esquerda de todos os itens do container */
+    text-align: justify; /* texto justiticado para melhor leitura */
+}
+
+.box-movie{
+    height: 100%; /* imagem aparecerá com 100% de altura */
+    width: 100%;  /* imagem aparecerá com 100% de largura */
+    display: block; /* imagem bloqueada */
 }
