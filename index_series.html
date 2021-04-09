@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--Favicon-->    
-    
     <link rel="shortcut icon" href="img/icon/Flight-icon.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/series.css">
 
     <!--responsive.css-->
     <link rel="stylesheet" href="style/responsive.css">
@@ -18,32 +16,33 @@
     <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
     <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">    
 
+
     <title>FlightFlix</title>
 </head>
 <body>
-    <header> 
+    <header>
         <div class="container"> <!--Inicio div box 1 logo e menu-->
             <h2 class="logo">FlightFlix</h2>
             <nav>
-                <a href="#">Inicio</a>
-                <a href="#" onclick="series()">Séries</a>
-                <a href="#">Filmes</a>
+                <a href="#" onclick="home()">Inicio</a>
+                <a href="#">Séries</a>
+                <a href="#" onclick="home()">Filmes</a>
                 <a href="#">Desenhos</a>
             </nav>
         </div> <!--Final div box 1 logo e menu-->
-    </header>  
+    </header>
 
     <main> <!--Incio do banner principal-->
-        <div class="main-movie">
+        <div class="main-series">
             <div class="container">
-                <h3 class="tittle">SULLY</h3>
-                <p class="description">Em 2009, o mundo entrou em estado de choque e admiração quando o Capitão Chesley "Sully" Sullenberger conseguiu pousar um avião em pane no Rio Hudson. Esse ato quase impossível salvou a vida dos 150 passageiros e alçou Sully à categoria de herói nacional. No entanto, nem mesmo a aclamação pública foi capaz de impedir uma investigação rigorosa sobre sua reputação e carreira.</p>
+                <h3 class="tittle">Pan Am</h3>
+                <p class="description">Neste mundo moderno, as viagens aéreas representam o auge do luxo e a Pan Am é o maior nome do ramo. Os aviões são glamorosos, os pilotos são astros do rock e as aeromoças são as mulheres mais cobiçadas do mundo. Eles são treinados para lidar com tudo, desde emergências no ar até avanços indesejados - tudo sem bagunçar seus uniformes imaculados ou bagunçar seus cabelos.</p>
                 <div class="buttons">
-                    <button role="button" class="button" onclick="play_now_movie()">
+                    <button role="button" class="button" onclick="play_now_series()">
                         <i class="fas fa-play"></i> <!--A propriedade role é usada para indicar que trata-se de um botão, independete do dipostivo utilizado-->
                         ASSITIR AGORA
                     </button>
-                    <button role="button" class="button" onclick="more_information_movie()">
+                    <button role="button" class="button" onclick="more_information_series()">
                         <i class="fas fa-info-circle"></i>
                         MAIS INFORMAÇÕES
                     </button>
@@ -52,25 +51,25 @@
         </div>
     </main> <!--Fim do banner principal-->
 
-    <div class="carousel-movies"> <!--inicio carrossel filmes-->
+    <div class="carousel-series"> <!--inicio carrossel filmes-->
         <div class="owl-carousel owl-theme"> <!--referenciando o owl carousel-->
             <div class="item"> <!--1-->
-                <img class="box-movie" src="img/movies/o-aviador.jpg" alt="cartaz do filme o aviador"> <!--passando o caminho da imagem-->
+                <img class="box-movie" src="img/series/manifest.jpg" alt="cartaz do filme o aviador"> <!--passando o caminho da imagem-->
             </div>
             <div class="item"> <!--2-->
-                <img class="box-movie" src="img/movies/O-terminal.jpg" alt="cartaz do filme o terminal"> <!--passando o caminho da imagem-->
+                <img class="box-movie" src="img/series/noite-a-dentro.jpg" alt="cartaz do filme o terminal"> <!--passando o caminho da imagem-->
             </div>
             <div class="item"> <!--3-->
-                <img class="box-movie" src="img/movies/prenda-me-se-for-capaz.jpg" alt="cartaz do filme prenda-mse se for capaz"> <!--passando o caminho da imagem-->
+                <img class="box-movie" src="img/series/house-of-cards-3.jpg" alt="cartaz do filme prenda-mse se for capaz"> <!--passando o caminho da imagem-->
             </div>
             <div class="item"> <!--4-->
-                <img class="box-movie" src="img/movies/apertem-os-cintos-o-piloto-sumiu.jpg" alt="cartaz do filme apertem os cintos o piloto sumiu"> <!--passando o caminho da imagem-->
+                <img class="box-movie" src="img/series/challenger.jpg" alt="cartaz do filme apertem os cintos o piloto sumiu"> <!--passando o caminho da imagem-->
             </div>
             <div class="item"> <!--5-->
-                <img class="box-movie" src="img/movies/boeing-boeing.jpg" alt="cartaz do filme boeing-boeing"> <!--passando o caminho da imagem-->
+                <img class="box-movie" src="img/series/flight-29-down.jpg" alt="cartaz do filme boeing-boeing"> <!--passando o caminho da imagem-->
             </div>
             <div class="item"> <!--6-->
-                <img class="box-movie" src="img/movies/ela-e-demaos-pra-mimjpg.jpg" alt="cartaz do filme ela é demais para mim."> <!--passando o caminho da imagem-->
+                <img class="box-movie" src="img/series/the-flight-attendant.jpg" alt="cartaz do filme ela é demais para mim."> <!--passando o caminho da imagem-->
             </div>
             <div class="item"> <!--7-->
                 <img class="box-movie" src="img/movies/serpentes-a-bordo.jpg" alt="cartaz do filme serpentes a serpentes-a-bordo"> <!--passando o caminho da imagem-->
@@ -89,6 +88,5 @@
     <script src="js/owl/setup.js"></script> <!--Referenciando o arquivo setup.js para aplicar o carrossel na página-->
     <script type="text/javascript" src="js/owl/main.js"></script> <!--Referenciando o script que direcionao para o trailer do filme contido no banner principal -->
     
-
 </body>
 </html>

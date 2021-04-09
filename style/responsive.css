@@ -1,0 +1,19 @@
+@media screen and (max-width: 700px){ /* altera a forma de exibição da barra principal para telas até 700px */
+    header .container{
+        display: flex;
+        flex-direction: column; /* menun abaixo do nome principal */
+    }
+
+    .button{ /* exibição dos botões para telas menores que 700px */
+        margin-top: 5px; /* margem entre os botões */
+        width: 250px;
+        height: 50px;
+    }
+}
+
+@media screen and (min-width: 1000px) { /* porcentagem que a descrição ocupará na tela acima de 999px */
+    .descriptio{
+        width: 50%
+    }
+    
+}

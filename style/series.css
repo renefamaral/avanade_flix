@@ -46,11 +46,11 @@ header nav a:hover{ /* cria um efeito toda vez que o mouse estiver sobre a font 
 
 /* main-movie */
 
-.main-movie{
+.main-series{
     font-size: 16px;
     margin-top: 5px;    
 
-    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/img/movies/sully_capa.jpg'); /* linear-gradiente cria uma camada para facilitar a visualização do texto sobre a imagem, aplicando gradiente de 100% */
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/img/series/pan_am2.png'); /* linear-gradiente cria uma camada para facilitar a visualização do texto sobre a imagem, aplicando gradiente de 100% */
 
     height: 450px; /* altura da imagem de fundo */
     
@@ -67,12 +67,12 @@ header nav a:hover{ /* cria um efeito toda vez que o mouse estiver sobre a font 
     */
 }
 
-.main-movie .description{
+.main-series .description{
     margin-bottom: 40px; /* Empurra os botões criando o distanciamento setado */
     margin-top: 10px; /* cria espaçamento entre a descrição e título */
 }
 
-.main-movie .tittle{
+.main-series .tittle{
     margin-top: 5%; /* posicionamento do título */
     font-size: 40px; /* Tamanho da letra do título */
     font-family: 'Trebuchet MS', Arial, sans-serif; /* Alterando a fonte do título */
@@ -103,19 +103,18 @@ header nav a:hover{ /* cria um efeito toda vez que o mouse estiver sobre a font 
     margin-right: 8px; /* criando espaçamento entre o ícone do botão e o texto */
 }
 
-.main-movie .container{
+.main-series .container{
     width: 70%; /* o conteúdo do container não ultrapassará 70% da tela  */
     margin-left: 15px; /* ajusta a margem esquerda de todos os itens do container */
     text-align: justify; /* texto justiticado para melhor leitura */
 }
 
-.box-movie{
+.box-serie{
     height: 100%; /* imagem aparecerá com 100% de altura */
     width: 100%;  /* imagem aparecerá com 100% de largura */
     display: block; /* imagem bloqueada */
 }
 
-.carousel-movies{
+.carousel-series{
     margin-top: 5px;
 }
-
