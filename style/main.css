@@ -1,8 +1,7 @@
 :root{ /* declarando as variáveis principais */
-    --vermelho: #E50914;
-    --preta: #141414;
+    --dark_gold: #cda34fd5;
+    --black: #151515;
 }
-
 
 *{ /* resetando todas as margens (recomendado) */
     margin: 0;
@@ -13,11 +12,10 @@
 /* elementos base */
 
 body{ /* cor de fundo principal da página */
-    background: var(--preta);
+    background: var(--black);
     font-family: 'Arial', Times, serif;
     color: white;
 }
-
 
 header .container{
     display: flex; /* posiciona o menu a direita do logo por padrão */   
@@ -27,7 +25,7 @@ header .container{
 }
 
 header .logo{ /* tratamento específico para o logo */
-    color: var(--vermelho);
+    color: var(--dark_gold);
     font-family: 'Arial Black', Times;
     font-size: 40px;  
     margin-left: 10px;  
@@ -35,7 +33,7 @@ header .logo{ /* tratamento específico para o logo */
 
 header nav a{
     text-decoration: none; /* retira o sublinhado do menu */
-    color: #aaa;
+    color: #ab9453b9;
     margin-right: 20px; /*cria espaçemnto a direita */
     font-size: 20px;
 }
@@ -60,11 +58,6 @@ header nav a:hover{ /* cria um efeito toda vez que o mouse estiver sobre a font 
     flex-direction: column; /* direciona em forma de coluna */
     justify-content: center; /* centraliza os botões seguindo a direção do flex-direction */
     align-items: flex-start; /* iniciam na esquerda */
-
-    /*
-    height: 100%;
-    width: 100%;
-    */
 }
 
 .main-movie .description{
@@ -76,7 +69,6 @@ header nav a:hover{ /* cria um efeito toda vez que o mouse estiver sobre a font 
     margin-top: 5%; /* posicionamento do título */
     font-size: 40px; /* Tamanho da letra do título */
     font-family: 'Trebuchet MS', Arial, sans-serif; /* Alterando a fonte do título */
-
 }
 
 .button{
@@ -91,11 +83,10 @@ header nav a:hover{ /* cria um efeito toda vez que o mouse estiver sobre a font 
     cursor: pointer; /* Muda o formato do cursor indicando possibilidade de ação com o botão */
 
     transition: .3s ease all; /* cuida da transição entre uma animação e outra */
-
 }
 
 .button:hover{
-    background-color: white; /* qnd o mouse estiver no botão fundo branco */
+    background-color: #ab9453b9; /* qnd o mouse estiver no botão fundo branco */
     color: black; /* qnd o mouse estiver no botão letra preta */
 }
 
@@ -119,3 +110,92 @@ header nav a:hover{ /* cria um efeito toda vez que o mouse estiver sobre a font 
     margin-top: 5px;
 }
 
+/* main-series */
+
+.main-series{
+    font-size: 16px;
+    margin-top: 5px;    
+
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/img/series/pan_am2.png'); /* linear-gradiente cria uma camada para facilitar a visualização do texto sobre a imagem, aplicando gradiente de 100% */
+
+    height: 450px; /* altura da imagem de fundo */
+    
+    background-size: cover; /* ocupa todo o espaço disponível em height */
+
+    display: flex; /* utilizado para posionar os botões assistir agora e mais informações */
+    flex-direction: column; /* direciona em forma de coluna */
+    justify-content: center; /* centraliza os botões seguindo a direção do flex-direction */
+    align-items: flex-start; /* iniciam na esquerda */
+}
+
+.main-series .description{
+    margin-bottom: 40px; /* Empurra os botões criando o distanciamento setado */
+    margin-top: 10px; /* cria espaçamento entre a descrição e título */
+}
+
+.main-series .tittle{
+    margin-top: 5%; /* posicionamento do título */
+    font-size: 40px; /* Tamanho da letra do título */
+    font-family: 'Trebuchet MS', Arial, sans-serif; /* Alterando a fonte do título */
+}
+
+.main-series .container{
+    width: 70%; /* o conteúdo do container não ultrapassará 70% da tela  */
+    margin-left: 15px; /* ajusta a margem esquerda de todos os itens do container */
+    text-align: justify; /* texto justiticado para melhor leitura */
+}
+
+.box-serie{
+    height: 100%; /* imagem aparecerá com 100% de altura */
+    width: 100%;  /* imagem aparecerá com 100% de largura */
+    display: block; /* imagem bloqueada */
+}
+
+.carousel-series{
+    margin-top: 5px;
+}
+
+/* main-cartoon */
+
+.main-cartoon{
+    font-size: 16px;
+    margin-top: 5px;    
+
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/img/cartoon/avioes_banner.jpg'); /* linear-gradiente cria uma camada para facilitar a visualização do texto sobre a imagem, aplicando gradiente de 100% */
+
+    height: 450px; /* altura da imagem de fundo */
+    
+    background-size: cover; /* ocupa todo o espaço disponível em height */
+
+    display: flex; /* utilizado para posionar os botões assistir agora e mais informações */
+    flex-direction: column; /* direciona em forma de coluna */
+    justify-content: center; /* centraliza os botões seguindo a direção do flex-direction */
+    align-items: flex-start; /* iniciam na esquerda */
+}
+
+.main-cartoon .description{
+    margin-bottom: 40px; /* Empurra os botões criando o distanciamento setado */
+    margin-top: 10px; /* cria espaçamento entre a descrição e título */
+}
+
+.main-cartoon .tittle{
+    margin-top: 5%; /* posicionamento do título */
+    font-size: 40px; /* Tamanho da letra do título */
+    font-family: 'Trebuchet MS', Arial, sans-serif; /* Alterando a fonte do título */
+}
+
+.main-cartoon .container{
+    width: 70%; /* o conteúdo do container não ultrapassará 70% da tela  */
+    margin-left: 15px; /* ajusta a margem esquerda de todos os itens do container */
+    text-align: justify; /* texto justiticado para melhor leitura */
+}
+
+.box-cartoon{
+    height: 100%; /* imagem aparecerá com 100% de altura */
+    width: 100%;  /* imagem aparecerá com 100% de largura */
+    display: block; /* imagem bloqueada */
+}
+
+.carousel-cartoon{
+    margin-top: 5px;
+}

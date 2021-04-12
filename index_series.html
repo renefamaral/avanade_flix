@@ -1,21 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--Favicon-->
+
     <link rel="shortcut icon" href="img/icon/Flight-icon.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="style/series.css">
+    <!--main.css-->
+    <link rel="stylesheet" href="style/main.css">
 
     <!--responsive.css-->
     <link rel="stylesheet" href="style/responsive.css">
     
     <!-- owl css-->
     <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
-    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">    
-
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">   
 
     <title>FlightFlix</title>
 </head>
@@ -25,14 +27,15 @@
             <h2 class="logo">FlightFlix</h2>
             <nav>
                 <a href="#" onclick="home()">Inicio</a>
-                <a href="#">Séries</a>
+                <a href="#" onclick="cartoon()">Desenhos</a>
                 <a href="#" onclick="home()">Filmes</a>
-                <a href="#">Desenhos</a>
+                <a href="#">Séries</a>
             </nav>
         </div> <!--Final div box 1 logo e menu-->
     </header>
 
-    <main> <!--Incio do banner principal-->
+    <!--Incio do banner principal-->
+    <main> 
         <div class="main-series">
             <div class="container">
                 <h3 class="tittle">Pan Am</h3>
@@ -49,37 +52,33 @@
                 </div>
             </div>            
         </div>
-    </main> <!--Fim do banner principal-->
+    </main> 
+    <!--Fim do banner principal-->
 
-    <div class="carousel-series"> <!--inicio carrossel filmes-->
+    <!--inicio carrossel filmes-->
+    <div class="carousel-series"> 
         <div class="owl-carousel owl-theme"> <!--referenciando o owl carousel-->
             <div class="item"> <!--1-->
-                <img class="box-movie" src="img/series/manifest.jpg" alt="cartaz do filme o aviador"> <!--passando o caminho da imagem-->
+                <img class="box-movie" src="img/series/manifest.jpg" alt="cartaz da série manifest"> <!--passando o caminho da imagem-->
             </div>
             <div class="item"> <!--2-->
-                <img class="box-movie" src="img/series/noite-a-dentro.jpg" alt="cartaz do filme o terminal"> <!--passando o caminho da imagem-->
+                <img class="box-movie" src="img/series/noite-a-dentro.jpg" alt="cartaz da série noite a dentro"> <!--passando o caminho da imagem-->
             </div>
             <div class="item"> <!--3-->
-                <img class="box-movie" src="img/series/house-of-cards-3.jpg" alt="cartaz do filme prenda-mse se for capaz"> <!--passando o caminho da imagem-->
+                <img class="box-movie" src="img/series/house-of-cards-3.jpg" alt="cartaz da série house of cards"> <!--passando o caminho da imagem-->
             </div>
             <div class="item"> <!--4-->
-                <img class="box-movie" src="img/series/challenger.jpg" alt="cartaz do filme apertem os cintos o piloto sumiu"> <!--passando o caminho da imagem-->
+                <img class="box-movie" src="img/series/challenger.jpg" alt="cartaz da série challenger the final fight"> <!--passando o caminho da imagem-->
             </div>
             <div class="item"> <!--5-->
-                <img class="box-movie" src="img/series/flight-29-down.jpg" alt="cartaz do filme boeing-boeing"> <!--passando o caminho da imagem-->
+                <img class="box-movie" src="img/series/flight-29-down.jpg" alt="cartaz da série flight 29 down"> <!--passando o caminho da imagem-->
             </div>
             <div class="item"> <!--6-->
-                <img class="box-movie" src="img/series/the-flight-attendant.jpg" alt="cartaz do filme ela é demais para mim."> <!--passando o caminho da imagem-->
+                <img class="box-movie" src="img/series/the-flight-attendant.jpg" alt="cartaz da série the flight attendant."> <!--passando o caminho da imagem-->
             </div>
-            <div class="item"> <!--7-->
-                <img class="box-movie" src="img/movies/serpentes-a-bordo.jpg" alt="cartaz do filme serpentes a serpentes-a-bordo"> <!--passando o caminho da imagem-->
-            </div>
-            <div class="item"> <!--8-->
-                <img class="box-movie" src="img/movies/amor-sem-escalasjpg.jpg" alt="cartaz do filme amor sem escalas"> <!--passando o caminho da imagem-->
-            </div>            
         </div>
     </div>
-
+    <!--Fim do carrossel series-->
     
     <!--Inicio do scripts. Recomendado deixar sempre no final do html-->
     <script src="https://kit.fontawesome.com/1a10758314.js" crossorigin="anonymous"></script> <!--kit code awesome-->
@@ -88,5 +87,6 @@
     <script src="js/owl/setup.js"></script> <!--Referenciando o arquivo setup.js para aplicar o carrossel na página-->
     <script type="text/javascript" src="js/owl/main.js"></script> <!--Referenciando o script que direcionao para o trailer do filme contido no banner principal -->
     
+    <!--Fim dos scripts-->
 </body>
 </html>

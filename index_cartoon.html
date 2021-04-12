@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Favicon-->
+
+    <link rel="shortcut icon" href="img/icon/Flight-icon.png" type="image/x-icon">
+
+    <!--main.css-->
+    <link rel="stylesheet" href="style/main.css">
+
+    <!--responsive.css-->
+    <link rel="stylesheet" href="style/responsive.css">
+
+    <!-- owl css-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">  
+
+    <title>FlightFlix</title>
+</head>
+<body>
+    <header>
+        <div class="container"> <!--Inicio div box 1 logo e menu-->
+            <h2 class="logo">FlightFlix</h2>
+            <nav>
+                <a href="#" onclick="home()">Inicio</a>
+                <a href="#">Desenhos</a>
+                <a href="#" onclick="home()">Filmes</a>
+                <a href="#" onclick="series()">Séries</a>
+            </nav>
+        </div> <!--Final div box 1 logo e menu-->
+    </header>
+
+     <!--Incio do banner principal-->
+    <main>
+        <div class="main-cartoon">
+            <div class="container">
+                <h3 class="tittle">AVIÕES</h3>
+                <p class="description">Dusty não foi propriamente feito para participar em corridas aéreas e ainda por cima tem medo de alturas. Por isso, recorre a Skipper, um aviador naval, que ajuda Dusty a qualificar-se para competir com Ripslinger, o detentor do título de campeão do circuito de corridas. A coragem de Dusty é posta à prova quando ousa alcançar alturas que nunca imaginara possíveis, inspirando-o a voar mais alto.</p>
+                <div class="buttons">
+                    <button role="button" class="button" onclick="play_now_cartoon()">
+                        <i class="fas fa-play"></i> <!--A propriedade role é usada para indicar que trata-se de um botão, independete do dipostivo utilizado-->
+                        ASSITIR AGORA
+                    </button>
+                    <button role="button" class="button" onclick="more_information_cartoon()">
+                        <i class="fas fa-info-circle"></i>
+                        MAIS INFORMAÇÕES
+                    </button>
+                </div>
+            </div>            
+        </div>
+    </main> 
+    <!--Fim do banner principal-->
+    
+    <!--inicio carrossel cartoons-->
+    <div class="carousel-movies"> 
+        <div class="owl-carousel owl-theme"> <!--referenciando o owl carousel-->
+            <div class="item"> <!--1-->
+                <img class="box-movie" src="img/cartoon/avioes2.jpg" alt="cartaz do desenho aviões 2"> <!--passando o caminho da imagem-->
+            </div>
+            <div class="item"> <!--2-->
+                <img class="box-movie" src="img/cartoon/planes_vitaminamulch.jpg" alt="cartaz do desenho aviões vitaminamulch"> <!--passando o caminho da imagem-->
+            </div>
+            <div class="item"> <!--3-->
+                <img class="box-movie" src="img/cartoon/petey.jpg" alt="cartaz do desenho petey"> <!--passando o caminho da imagem-->
+            </div>
+            <div class="item"> <!--4-->
+                <img class="box-movie" src="img/cartoon/patrulha_canina.jpg" alt="cartaz do desenho patrulha canina"> <!--passando o caminho da imagem-->
+            </div>
+            <div class="item"> <!--5-->
+                <img class="box-movie" src="img/cartoon/o-aviao-do-mickey.jpg" alt="cartaz do desenho o avião do mickey"> <!--passando o caminho da imagem-->
+            </div>
+            <div class="item"> <!--6-->
+                <img class="box-movie" src="img/cartoon/a-fuga-do-planeta-terra.jpg" alt="cartaz do desenho a fuga do planeta terra."> <!--passando o caminho da imagem-->
+            </div>
+            <div class="item"> <!--7-->
+                <img class="box-movie" src="img/cartoon/star-wars-droids.jpg" alt="cartaz do desenho star wars droids"> <!--passando o caminho da imagem-->
+            </div>
+            <div class="item"> <!--8-->
+                <img class="box-movie" src="img/cartoon/avioes-com-cerebro.jpg" alt="cartaz do desenho aviões com cérebro"> <!--passando o caminho da imagem-->
+            </div>            
+        </div>
+    </div>
+    <!--Fim do carrossel cartoons-->
+
+     <!--Inicio do scripts. Recomendado deixar sempre no final do html-->
+     <script src="https://kit.fontawesome.com/1a10758314.js" crossorigin="anonymous"></script> <!--kit code awesome-->
+     <script src="js/owl/jquery.min.js"></script> <!--Carousel Jquery-->
+     <script src="js/owl/owl.carousel.min.js"></script> <!--Carousel Jquery-->
+     <script src="js/owl/setup.js"></script> <!--Referenciando o arquivo setup.js para aplicar o carrossel na página-->
+     <script type="text/javascript" src="js/owl/main.js"></script> <!--Referenciando o script que direcionao para o trailer do filme contido no banner principal -->
+
+     <!--Fim dos scripts-->
+</body>
+</html>

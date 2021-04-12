@@ -7,8 +7,9 @@
 
     <!--Favicon-->    
     
-    <link rel="shortcut icon" href="img/icon/Flight-icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/icon/Flight-icon.png" type="image/x-icon">    
 
+    <!--main.css-->
     <link rel="stylesheet" href="style/main.css">
 
     <!--responsive.css-->
@@ -26,14 +27,15 @@
             <h2 class="logo">FlightFlix</h2>
             <nav>
                 <a href="#">Inicio</a>
-                <a href="#" onclick="series()">Séries</a>
+                <a href="#" onclick="cartoon()">Desenhos</a>
                 <a href="#">Filmes</a>
-                <a href="#">Desenhos</a>
+                <a href="#" onclick="series()">Séries</a>
             </nav>
         </div> <!--Final div box 1 logo e menu-->
     </header>  
 
-    <main> <!--Incio do banner principal-->
+    <!--Incio do banner principal-->
+    <main> 
         <div class="main-movie">
             <div class="container">
                 <h3 class="tittle">SULLY</h3>
@@ -50,9 +52,11 @@
                 </div>
             </div>            
         </div>
-    </main> <!--Fim do banner principal-->
+    </main> 
+    <!--Fim do banner principal-->
 
-    <div class="carousel-movies"> <!--inicio carrossel filmes-->
+    <!--inicio carrossel filmes-->
+    <div class="carousel-movies"> 
         <div class="owl-carousel owl-theme"> <!--referenciando o owl carousel-->
             <div class="item"> <!--1-->
                 <img class="box-movie" src="img/movies/o-aviador.jpg" alt="cartaz do filme o aviador"> <!--passando o caminho da imagem-->
@@ -80,7 +84,7 @@
             </div>            
         </div>
     </div>
-
+    <!--Fim do carrossel movies-->
     
     <!--Inicio do scripts. Recomendado deixar sempre no final do html-->
     <script src="https://kit.fontawesome.com/1a10758314.js" crossorigin="anonymous"></script> <!--kit code awesome-->
@@ -89,6 +93,6 @@
     <script src="js/owl/setup.js"></script> <!--Referenciando o arquivo setup.js para aplicar o carrossel na página-->
     <script type="text/javascript" src="js/owl/main.js"></script> <!--Referenciando o script que direcionao para o trailer do filme contido no banner principal -->
     
-
+    <!--Fim dos scripts-->
 </body>
 </html>
